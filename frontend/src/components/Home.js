@@ -11,17 +11,17 @@ class Home extends React.Component {
         
         this.state = {
             loading: false,
-            posts: [],
+            startpage: {},
             error: ''
         }
     }
 
     componentDidMount() {
-        const wordpressSiteUrl = 'http://localhost:8888/wordpress/';
+        const wordpressSiteUrl = 'http://ec2-18-191-148-24.us-east-2.compute.amazonaws.com/';
         this.setState( { loading: true }, () => {
-            axios.get( `${wordpressSiteUrl}/wp-json/wp/v2/posts` )
+            axios.get( `${wordpressSiteUrl}/wp-json/wp/v2/pages/11` )
             .then(res => {
-                this.setState({loading: false, posts: res.data});
+                this.setState({loading: false, startpage: res.data});
             }) 
             .catch( error => {
                 this.setState({loading: false, error : error.response.data.message});
@@ -30,12 +30,18 @@ class Home extends React.Component {
     }
 
     render() {
-        const {loading, posts, error} = this.state;
+        const {loading, startpage, error} = this.state;
+        const ACF = startpage.ACF;
+        console.log(startpage);
+        console.log(ACF);
         return (
             <div>
             <Navbar/>
             { error && <div className="alert">{error}</div> }
-            { posts.length ? (
+            {  Object.keys(startpage).length ? (
+                <h1>{ACF.header}</h1>
+            ) : ''}
+            {/* { posts.length ? (
                 <div className='post-container'>
                     {posts.map( post => (
                         <div key={post.id}>
@@ -49,7 +55,7 @@ class Home extends React.Component {
                         </div>
                     ) )}
                 </div>
-            ) : ''}
+            ) : ''} */}
             { loading && <h1>Laddar...</h1> }
             </div>
         );
