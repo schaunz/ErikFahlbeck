@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from '@reach/router';
 import Navbar from './Navbar';
 import renderHTML from 'react-render-html';
+import Presentation from './Presentation';
 
 class Home extends React.Component {
 
@@ -60,6 +61,7 @@ class Home extends React.Component {
             // </div>
             <div>
                 <Navbar/>
+                <Presentation/>
             </div>
         );
     }

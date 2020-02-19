@@ -4,7 +4,7 @@ import './App.scss';
 import Home from './components/Home';
 import { Router } from '@reach/router';
 import SinglePost from './components/SinglePost';
-import Avhandlingar from './components/Avhandlingar'
+import Avhandlingar from './components/Avhandlingar';
 
 function App() {
   return (
