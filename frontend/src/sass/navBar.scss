@@ -1,0 +1,27 @@
+.NavBar {
+    height: 100px;
+    background: #3f94f7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    
+    .logo {
+        h1 {
+            border-bottom: 5px solid #DCAE96;
+            width: fit-content;
+            padding-bottom: 3px;
+            margin-bottom: 0;
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        h2 {
+            font-size: 25px;
+            margin-bottom: 0;
+        }
+    }
+}

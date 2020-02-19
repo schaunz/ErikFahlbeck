@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, p {
+    color: white;
+    transition: color .5s ease-in-out;
+    font-family: Garamond, sans-serif;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+        h1, h2 {
+            color: #9ecdff;
+        }
+    }
+}

@@ -35,28 +35,31 @@ class Home extends React.Component {
         console.log(startpage);
         console.log(ACF);
         return (
+            // <div>
+            // <Navbar/>
+            // { error && <div className="alert">{error}</div> }
+            // {  Object.keys(startpage).length ? (
+            //     <h1>{ACF.header}</h1>
+            // ) : ''}
+            // {/* { posts.length ? (
+            //     <div className='post-container'>
+            //         {posts.map( post => (
+            //             <div key={post.id}>
+            //                 <Link to={`/post/${post.id}`}>
+            //                     {post.title.rendered}
+            //                 </Link>
+            //                 <div className="post-content">
+            //                     {renderHTML(post.content.rendered)}
+            //                 </div>
+            //                 <Link to={`/post/${post.id}`} className="readmore">Visit post</Link>
+            //             </div>
+            //         ) )}
+            //     </div>
+            // ) : ''} */}
+            // { loading && <h1>Laddar...</h1> }
+            // </div>
             <div>
-            <Navbar/>
-            { error && <div className="alert">{error}</div> }
-            {  Object.keys(startpage).length ? (
-                <h1>{ACF.header}</h1>
-            ) : ''}
-            {/* { posts.length ? (
-                <div className='post-container'>
-                    {posts.map( post => (
-                        <div key={post.id}>
-                            <Link to={`/post/${post.id}`}>
-                                {post.title.rendered}
-                            </Link>
-                            <div className="post-content">
-                                {renderHTML(post.content.rendered)}
-                            </div>
-                            <Link to={`/post/${post.id}`} className="readmore">Visit post</Link>
-                        </div>
-                    ) )}
-                </div>
-            ) : ''} */}
-            { loading && <h1>Laddar...</h1> }
+                <Navbar/>
             </div>
         );
     }
