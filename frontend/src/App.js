@@ -11,8 +11,7 @@ function App() {
     <div>
       <Router>
         <Home path='/' />
-        <Avhandlingar path="/avhandlingar" />
-        <SinglePost path="/singlepost" />
+        
       </Router>
     </div>
   );
