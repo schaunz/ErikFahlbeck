@@ -1,9 +1,9 @@
 import React from 'react';
 import axios from 'axios';
-import { Link } from '@reach/router';
 import Navbar from './Navbar';
-import renderHTML from 'react-render-html';
 import Presentation from './Presentation';
+import Boxes from './Boxes';
+import Footer from './Footer';
 
 class Home extends React.Component {
 
@@ -62,6 +62,8 @@ class Home extends React.Component {
             <div>
                 <Navbar/>
                 <Presentation/>
+                <Boxes/>
+                <Footer/>
             </div>
         );
     }

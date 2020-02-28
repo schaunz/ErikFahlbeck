@@ -1,14 +1,14 @@
 .NavBar {
     height: 100px;
+    width: 100%;    
     background: #3f94f7;
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: relative;
+    position: fixed;
     
     .logo {
         h1 {
-            border-bottom: 5px solid #DCAE96;
             width: fit-content;
             padding-bottom: 3px;
             margin-bottom: 0;

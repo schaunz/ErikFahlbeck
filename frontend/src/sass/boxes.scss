@@ -1,0 +1,10 @@
+.boxes {
+    .container {
+        .content {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    }
+}

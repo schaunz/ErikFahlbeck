@@ -1,5 +1,13 @@
 .presentation {
+    padding: 200px 0 100px 0;
     .container {
         flex-direction: column;
+        .content {
+            max-width: 940px;
+            p {
+                text-align: justify;
+                margin-bottom: 0;
+            }
+        }
     }
 }
