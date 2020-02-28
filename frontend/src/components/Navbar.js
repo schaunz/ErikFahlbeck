@@ -12,13 +12,13 @@ class Navbar extends React.Component {
                         </Link>
                     </div>
                     <div className="menu col-sm-8">
-                        <Link to="/">
+                        <Link to="/analyserar">
                             <h2>Analyserar</h2>
                         </Link>
-                        <Link to="/">
+                        <Link to="/utreder">
                             <h2>Utreder</h2>
                         </Link>
-                        <Link to="/">
+                        <Link to="/modererar">
                             <h2>Modererar</h2>
                         </Link>
                         <Link to="/">

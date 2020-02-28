@@ -6,16 +6,18 @@
     flex-direction: row;
     align-items: center;
     position: fixed;
-    
+    top: 0;
     .logo {
         h1 {
             width: fit-content;
             padding-bottom: 3px;
             margin-bottom: 0;
             color: white;
+            &:hover {
+                color: #9ecdff;
+            }
         }
     }
-
     .menu {
         display: flex;
         flex-direction: row;
@@ -24,6 +26,9 @@
             font-size: 25px;
             margin-bottom: 0;
             color: white;
+            &:hover {
+                color: #9ecdff;
+            }
         }
     }
 }

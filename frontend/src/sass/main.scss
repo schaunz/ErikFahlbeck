@@ -5,10 +5,15 @@
     align-items: center;
 }
 
-h1, h2, p {
+h1, h2, p, a {
     color: black;
     transition: color .5s ease-in-out;
     font-family: Garamond, sans-serif;
+}
+
+p {
+    max-width: 940px;
+    text-align: justify;
 }
 
 a {

@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Utreder from '../components/Utreder';
+import Analyserar from '../components/Analyserar';
 
 class Home extends React.Component {
 
@@ -10,7 +10,7 @@ class Home extends React.Component {
         return (
             <div>
                 <Navbar/>
-                <Utreder/>
+                <Analyserar/>
                 <Footer/>
             </div>
         );
