@@ -17,24 +17,24 @@ class Home extends React.Component {
         }
     }
 
-    componentDidMount() {
-        const wordpressSiteUrl = 'http://ec2-18-191-148-24.us-east-2.compute.amazonaws.com/';
-        this.setState( { loading: true }, () => {
-            axios.get( `${wordpressSiteUrl}/wp-json/wp/v2/pages/11` )
-            .then(res => {
-                this.setState({loading: false, startpage: res.data});
-            }) 
-            .catch( error => {
-                this.setState({loading: false, error : error.response.data.message});
-              });
-        });
-    }
+    // componentDidMount() {
+    //     const wordpressSiteUrl = 'http://ec2-18-191-148-24.us-east-2.compute.amazonaws.com/';
+    //     this.setState( { loading: true }, () => {
+    //         axios.get( `${wordpressSiteUrl}/wp-json/wp/v2/pages/11` )
+    //         .then(res => {
+    //             this.setState({loading: false, startpage: res.data});
+    //         }) 
+    //         .catch( error => {
+    //             this.setState({loading: false, error : error.response.data.message});
+    //           });
+    //     });
+    // }
 
     render() {
-        const {loading, startpage, error} = this.state;
-        const ACF = startpage.ACF;
-        console.log(startpage);
-        console.log(ACF);
+        // const {loading, startpage, error} = this.state;
+        // const ACF = startpage.ACF;
+        // console.log(startpage);
+        // console.log(ACF);
         return (
             // <div>
             // <Navbar/>

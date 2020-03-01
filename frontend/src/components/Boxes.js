@@ -12,7 +12,7 @@ class Boxes extends React.Component {
             <div class="boxes">
                 <div class="container">
                     <div class="content">
-                        <Box title='Analyserar' image={tryg} link='/anayserar' />
+                        <Box title='Analyserar' image={tryg} link='/analyserar' />
                         <Box title='Utreder' image={SLU} link='/utreder' />
                         <Box title='Modererar' image={forelasning} link='/modererar' />
                     </div>

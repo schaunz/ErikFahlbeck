@@ -24,9 +24,9 @@ class Navbar extends React.Component {
                         <Link to="/">
                             <h2>CV</h2>
                         </Link>
-                        <Link to="#footer">
+                        {/* <Link to="#footer">
                             <h2>Kontakt</h2>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>
