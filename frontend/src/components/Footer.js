@@ -9,9 +9,36 @@ class Footer extends React.Component {
             <div id="footer">
                 <div class="container">
                     <div class="content">
-                        <div class="col">Erik Fahlbeck</div>
-                        <div class="col"><a href='mailto:erik.fahlbeck@bahnhof.se'>erik.fahlbeck@bahnhof.se</a></div>
-                        <div class="col"><a href='tel:0123123'>123123123</a></div>
+                            <ul>
+                                <li>
+                                    Adress:
+                                </li>
+                                <li>
+                                    Erik Fahlbeck
+                                </li>
+                                <li>
+                                    Hågavägen 318
+                                </li>
+                                <li>
+                                    752 63 Uppsala
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Email: <a href='mailto:erik.fahlbeck@bahnhof.se'>erik.fahlbeck@bahnhof.se</a>
+                                </li>
+                                <li>
+                                    Mobil: <a href='tel:0123123'>0730311140</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Org. nr. 6303146275
+                                </li>    
+                                <li>
+                                    Bg: 5446-1322
+                                </li>
+                            </ul>    
                     </div>
                 </div>
             </div>

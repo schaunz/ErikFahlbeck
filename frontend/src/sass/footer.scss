@@ -1,6 +1,6 @@
 #footer {
     margin: 100px 0 0 0;
-    height: 100px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,13 +9,21 @@
         .content {
             display: flex;
             flex-direction: row;
-            .col {
-                white-space: nowrap;
-                color: white;
-                a {
+            width: 100%;
+            justify-content: space-between;
+            max-width: 940px;
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                li {
                     color: white;
-                    &:hover {
-                        color: #9ecdff;
+                    a {
+                        color: white;
+                        &:hover {
+                            color: #9ecdff;
+                        }
                     }
                 }
             }

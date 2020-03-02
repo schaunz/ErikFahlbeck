@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from '@reach/router';
+import CV from '../pdf/CV.pdf';
 
 class Navbar extends React.Component {
     render() {
@@ -21,12 +22,12 @@ class Navbar extends React.Component {
                         <Link to="/modererar">
                             <h2>Modererar</h2>
                         </Link>
-                        <Link to="/">
+                        <a href={CV} target="_blank">
                             <h2>CV</h2>
-                        </Link>
-                        {/* <Link to="#footer">
+                        </a>
+                        <a href="#footer">
                             <h2>Kontakt</h2>
-                        </Link> */}
+                        </a>
                     </div>
                 </div>
             </div>
