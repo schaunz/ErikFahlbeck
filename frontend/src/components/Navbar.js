@@ -7,7 +7,7 @@ class Navbar extends React.Component {
         return(
             <div className="NavBar">
                 <div className="container">
-                    <div className="logo col-sm-4">
+                    <div className="logo col-sm-4 col-12">
                         <Link to='/'>
                             <h1>E.F. Utredningar</h1>
                         </Link>

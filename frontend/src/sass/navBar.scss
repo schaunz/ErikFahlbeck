@@ -7,6 +7,9 @@
     align-items: center;
     position: fixed;
     top: 0;
+    .container {
+        width: 100%;
+    }
     .logo {
         h1 {
             width: fit-content;
@@ -28,6 +31,13 @@
             color: white;
             &:hover {
                 color: #9ecdff;
+            }
+        }
+    }
+    @media(max-width: 768px) {
+        .container {
+            .menu {
+                display: none;
             }
         }
     }
